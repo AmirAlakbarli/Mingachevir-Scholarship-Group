@@ -9,6 +9,7 @@
 // LCM = (a*b)/GCD
 // (2*2*2*3)*(2*3*3)/2*3 = 24*3
 
+//! Problem 2 solution
 function GCD(a, b) {
   // let littleNum = a > b ? b : a; //* if a > b then return b, else return a
   // let bigNum = a > b ? a : b; //* if a > b then return a, else return b
@@ -35,6 +36,7 @@ function LCMwithGCD(a, b) {
 }
 
 //! ternary operator a > b ? a : b
+//! another solution without GCD
 function LCM(a, b) {
   let bigNum = a > b ? a : b;
   let res = bigNum;
@@ -50,3 +52,22 @@ function LCM(a, b) {
 
 console.log(LCMwithGCD(24, 18));
 console.log(LCM(24, 18));
+
+//! Problem 4 solution
+function stringNumberSeperator(...args) {
+  let str = "";
+  let num = 0;
+
+  for (let i = 0; i < args.length; i++) {
+    if (typeof args[i] == "string") str += args[i];
+    else if (typeof args[i] == "number") num += args[i];
+  }
+  return num + " " + str;
+  //   return [num, str];
+}
+
+console.log(
+  stringNumberSeperator("hello", "3", 14, "world", null, 25, "!", undefined)
+);
+
+
