@@ -35,8 +35,8 @@ function LCMwithGCD(a, b) {
   return (a * b) / GCD(a, b);
 }
 
-//! ternary operator a > b ? a : b
-//! another solution without GCD
+//* ternary operator a > b ? a : b
+//* another solution without GCD
 function LCM(a, b) {
   let bigNum = a > b ? a : b;
   let res = bigNum;

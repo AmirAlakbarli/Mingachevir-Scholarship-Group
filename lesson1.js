@@ -48,8 +48,7 @@
 // }
 // console.log(sum);
 
-//* task
-
+//! task
 function addOdd(num) {
   let res = "";
   for (let i = 1; i < num; i += 2) {
