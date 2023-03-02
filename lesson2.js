@@ -55,19 +55,16 @@ console.log(LCM(24, 18));
 
 //! Problem 4 solution
 function stringNumberSeperator(...args) {
+  let num = "";
   let str = "";
-  let num = 0;
-
   for (let i = 0; i < args.length; i++) {
-    if (typeof args[i] == "string") str += args[i];
-    else if (typeof args[i] == "number") num += args[i];
+    if (args[i] == null || args[i] == undefined) continue;
+    if (args[i] == Number(args[i])) num += String(args[i]);
+    else str += args[i];
   }
-  return num + " " + str;
-  //   return [num, str];
+  return num + ", " + str;
 }
 
 console.log(
   stringNumberSeperator("hello", "3", 14, "world", null, 25, "!", undefined)
 );
-
-
