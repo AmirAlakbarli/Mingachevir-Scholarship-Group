@@ -27,16 +27,14 @@ function sum(...args) {
 console.log(`sum(1.1, 2.2, 3.3) = ${sum(1.1, 2.2, 3.3)}`);
 
 //! Problem 5 solutions
-
 //* solution 1
 let nums = [10, 22, 43, 40, 5];
 let res = [];
 
-for (let i = 0; i < nums.length-1; i++) res.push(nums[i]);
+for (let i = 0; i < nums.length - 1; i++) res.push(nums[i]);
 
 res.unshift(nums[nums.length - 1]);
 console.log(`res = ${res}`);
-
 
 //* solution 2
 nums = [10, 22, 43, 40, 5];
@@ -46,7 +44,6 @@ res = Array(length);
 for (let i = 0; i < length; i++) res[(i + 1) % length] = nums[i];
 
 console.log(`res = ${res}`);
-
 
 //* solution 3
 nums = [10, 22, 43, 40, 5];
@@ -61,7 +58,6 @@ for (let i = 0; i < nums.length - 1; i++) {
 nums[0] = temp;
 console.log(`nums = ${nums}`);
 
-
 //* solution 4
 nums = [10, 22, 43, 40, 5];
 temp = nums[0];
@@ -75,7 +71,6 @@ for (let i = 1; i < nums.length; i++) {
 nums[0] = temp;
 console.log(`nums = ${nums}`);
 
-
 //* solution 5
 nums = [10, 22, 43, 40, 5];
 
@@ -87,7 +82,6 @@ for (let i = nums.length - 1; i > 0; i--) {
 
 console.log(`nums = ${nums}`);
 
-
 //* solution 6
 nums = [10, 22, 43, 40, 5];
 let last = nums[nums.length - 1];
@@ -96,7 +90,6 @@ for (let i = nums.length - 1; i > 0; i--) nums[i] = nums[i - 1];
 
 nums[0] = last;
 console.log(`nums = ${nums}`);
-
 
 //* solution 7
 nums = [10, 22, 43, 40, 5];
@@ -112,19 +105,16 @@ for (let i = nums.length % 2; i < nums.length; i += 2) {
 nums[0] = temp1;
 console.log(`nums = ${nums}`);
 
-
 //* solution 8
 nums = [10, 22, 43, 40, 5];
 nums = nums.slice(-1).concat(nums.slice(0, nums.length - 1));
 
 console.log(`nums = ${nums}`);
 
-
 //* solution 9
 nums = [10, 22, 43, 40, 5];
 nums.unshift(nums.pop());
 console.log(`nums = ${nums}`);
-
 
 //! Problem 6 solution
 nums = [4, -2, 0, 3, 8, 10, -7, 2, 5, -6, 9, 1];
